@@ -1,5 +1,8 @@
 ## Welcome to GitHub Pages
 
+welcome to my personal website.
+I'm a sencond year undergraduate student in Renmin University of China, major in Data Science & Finance. I'll keep sharing learning experience in these fields and hopefully to be an scholar in my field one day. Every bit effort counts! 
+
 You can use the [editor on GitHub](https://github.com/Tokgoleo/liuhanbing.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
