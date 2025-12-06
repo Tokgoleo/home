@@ -77,3 +77,16 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Fake URL：用在没有 href 的标题（Work in Progress / Working Paper） */
+.fake-link {
+  color: #1772d0;
+  text-decoration: none;
+  cursor: pointer;  /* 想完全模仿链接的话，用 pointer；如果不想误导用户也可以改成 default */
+}
+
+.fake-link:hover,
+.fake-link:focus {
+  color: #f09228;
+  text-decoration: none;
+}
