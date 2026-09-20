@@ -204,3 +204,14 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .is-enhanced .publication-card { transition: none; }
 }
+
+.publication-distinction,
+.publication-distinction a {
+  color: #a64b50;
+}
+
+.publication-distinction a:hover,
+.publication-distinction a:focus-visible {
+  color: #81363b;
+  text-decoration: underline;
+}
