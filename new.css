@@ -46,6 +46,33 @@ h2 {
   font-size: 32px;
 }
 
+.name-toggle {
+  display: inline-grid;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.name-toggle > span {
+  grid-area: 1 / 1;
+  align-self: end;
+}
+
+.name-chinese { visibility: hidden; }
+.name-toggle[aria-pressed="true"] .name-english { visibility: hidden; }
+.name-toggle[aria-pressed="true"] .name-chinese { visibility: visible; }
+.name-chinese ruby { ruby-position: over; }
+.name-chinese rt {
+  font: 12px 'Lato', Verdana, sans-serif;
+  color: rgb(100 100 100 / 55%);
+}
+.name-toggle:focus-visible { outline: 2px solid #1772d0; outline-offset: 5px; }
+
 /* Fake URL：用在没有 href 的标题（Work in Progress / Working Paper） */
 .fake-link {
   color: #1772d0;
@@ -228,3 +255,15 @@ h2 {
 }
 
 .service-recognition { color: #a64b50; }
+
+.phd-opportunity {
+  margin: 18px 0;
+  padding: 12px 14px;
+  border: 1px solid #dbe7f2;
+  border-radius: 8px;
+  background: #f0f6fc;
+  color: #40556b;
+}
+
+.phd-opportunity p { margin: 0; line-height: 1.55; }
+.phd-opportunity strong { color: #24517a; }

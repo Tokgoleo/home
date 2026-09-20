@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="new.css">
     <script src="publications.js" defer></script>
+    <script src="profile.js" defer></script>
     <script type="text/javascript" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
@@ -24,17 +25,23 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Hanbing Liu
+                  <button class="name-toggle" type="button" aria-label="Show Chinese name" aria-pressed="false" title="Switch between English and Chinese">
+                    <span class="name-english">Hanbing Liu</span>
+                    <span class="name-chinese" lang="zh-Hans" aria-hidden="true"><ruby>刘<rt>Liú</rt></ruby> <ruby>涵冰<rt>Hánbīng</rt></ruby></span>
+                  </button>
                 </p>
-                <p>I'm a 2nd year Thesis-track Master's student at <a href="http://ai.ruc.edu.cn/english/index.htm">Gaoling School of Artificial Intelligence</a>, <a href="https://en.ruc.edu.cn">Renmin University of China</a>, adviced by <a href="https://gsai.ruc.edu.cn/english/qiqi">Prof. Qi Qi</a>. My recent research interest includes algorithmic game theory and foundation models.</p>
+                <p>I'm a final year Thesis-track Master's student at <a href="http://ai.ruc.edu.cn/english/index.htm">Gaoling School of Artificial Intelligence</a>, <a href="https://en.ruc.edu.cn">Renmin University of China (RUC)</a>, adviced by <a href="https://gsai.ruc.edu.cn/english/qiqi">Prof. Qi Qi</a>. My recent research focuses on intelligent decision-making and mechanism design in generative AI, particularly when foundation models are involved.</p>
 
-                <p>Prior to my graduate study, I obtined BE in Computer Science and BA in Finance (<a href="http://sf.ruc.edu.cn/sybk/zyjs_bk/2ac7cbfbcbf248fea089c65c80a39895.htm">Experimental dual degree program</a>) from the same university, where I was fortunate to work with <a href="https://xiaojingzi.github.io">Prof. Jing Zhang</a> and <a href="http://iir.ruc.edu.cn/~fanj/">Prof. Ju Fan</a> on various topics around large language models (LLMs).</p>
+                <p>Prior to my graduate study, I obtined BE in Computer Science and BA in Finance (<a href="http://sf.ruc.edu.cn/sybk/zyjs_bk/2ac7cbfbcbf248fea089c65c80a39895.htm">Experimental dual degree program</a>) from the same university, where I was fortunate to work with <a href="https://xiaojingzi.github.io">Prof. Jing Zhang</a> and <a href="http://iir.ruc.edu.cn/~fanj/">Prof. Ju Fan</a> on various topics around large language models.</p>
+
+                <aside class="phd-opportunity" aria-label="PhD opportunities">
+                  <p>🇺🇸 I am <strong>actively seeking PhD opportunities in CS/AI for Fall 2027</strong>, particularly in <strong>EconCS</strong>. Any advice would be greatly appreciated!</p>
+                </aside>
 
                 <p style="text-align:center">
                   <a href="mailto:liuhanbing@ruc.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV_HanbingLiu.pdf">CV</a> &nbsp;/&nbsp;
-
-                  <a href="https://scholar.google.com/citations?hl=en&user=HyP-2cMAAAAJ">Scholar</a> &nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=HyP-2cMAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/hanbing-liu-2a8a721b8/">LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -47,22 +54,6 @@
             <tr>
             <td style="padding:16px 16px 16px 16px;width:100%;vertical-align:middle">
               <h2>Research</h2>
-
-              <p>
-                I currently focus on the <strong>Economics of Foundation Models</strong>,
-                through the lens of mechanism design and machine learning, in this academic year.
-                My ongoing works are about emerging commercial paradigms in the LLM era
-                (<a href="#P1">P1</a>, <a href="#P3">P3</a>).
-                Previously, my research lies in contest design
-                (<a href="#P2">P2</a>, <a href="#C1">C1</a>)
-                and LLM complex reasoning
-                (<a href="#C2">C2</a>, <a href="#C3">C3</a>, <a href="#C4">C4</a>).
-                With an interdisciplinary background, I am also broadly interested in intersections between algorithmic game theory and foundation models.
-              </p>
-
-              <p style="text-align: right;">
-                <em>&alpha;-&beta;: Alphabetical Order, *: Equal Contribution, &#8224;: Corresponding Author</em>
-              </p>
 
               <h3 id="preprints-heading">Featured Preprints</h3>
             </td>
@@ -202,6 +193,10 @@
             <span class="publication-counter" aria-live="polite" aria-atomic="true"></span>
           </div>
         </section>
+
+              <p style="text-align: right;">
+                <em>&alpha;-&beta;: Alphabetical Order, *: Equal Contribution, &#8224;: Corresponding Author</em>
+              </p>
 
           <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
