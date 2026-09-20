@@ -215,3 +215,14 @@ h2 {
   color: #81363b;
   text-decoration: underline;
 }
+
+.publication-heading { margin: 22px 16px 16px; }
+
+.featured-preprints {
+  padding: 6px 0 2px;
+}
+
+.featured-preprints .publication-card {
+  background: #fffbed;
+  border-color: #eee5c8;
+}

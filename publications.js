@@ -1,13 +1,12 @@
-(() => {
-  const carousel = document.querySelector('.publications');
-  if (!carousel) return;
+document.querySelectorAll('.publications').forEach(carousel => {
+  const itemLabel = carousel.dataset.itemLabel || 'publication';
   const cards = [...carousel.querySelectorAll('.publication-card')];
   const counter = carousel.querySelector('.publication-counter');
   const controls = carousel.querySelector('.publication-controls');
   const dots = cards.map((card, index) => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.setAttribute('aria-label', `Show publication ${index + 1}: ${card.querySelector('.papertitle').textContent.trim()}`);
+    button.setAttribute('aria-label', `Show ${itemLabel} ${index + 1}: ${card.querySelector('.papertitle').textContent.trim()}`);
     button.addEventListener('click', () => show(index));
     controls.append(button);
     return button;
@@ -68,4 +67,4 @@
   });
   show(0);
   followHash();
-})();
+});
