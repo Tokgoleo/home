@@ -275,3 +275,45 @@ h2 {
 
 .phd-opportunity p { margin: 0; line-height: 1.55; }
 .phd-opportunity strong { color: #24517a; }
+
+.balloon-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.balloon-bunch {
+  position: absolute;
+  transform-origin: 0 -15px;
+  animation: balloon-appear 350ms ease-out both;
+}
+
+.balloon {
+  position: absolute;
+  left: -100px;
+  top: -190px;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transform-origin: 100px 190px;
+  animation: balloon-float var(--duration) cubic-bezier(.42, 0, .7, 1) var(--delay) both;
+}
+
+.balloon svg { display: block; }
+
+@keyframes balloon-appear {
+  from { opacity: 0; transform: scale(.25); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes balloon-float {
+  0% { opacity: .95; transform: translate(0, 0) rotate(0deg) scale(1); }
+  75% { opacity: .85; }
+  100% { opacity: 0; transform: translate(calc(var(--spread) * 1.8), var(--rise)) rotate(var(--tilt)) scale(.85); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .balloon-layer { display: none; }
+}
